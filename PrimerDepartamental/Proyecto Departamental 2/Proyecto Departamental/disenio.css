@@ -1,0 +1,112 @@
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('./Fondo.jpg') no-repeat center center fixed;
+    background-size: cover;
+  }
+
+  .container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column; /* Cambia la dirección principal a vertical */
+    align-items: center; /* Centra los elementos horizontalmente */
+  }
+
+  h1 {
+    color: #333;
+    margin-bottom: 30px;
+    font-size: 36px;
+  }
+
+  .todo-form {
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: left; /* Alinea el texto del formulario a la izquierda */
+  }
+
+  .todo-form label {
+    display: block; /* Hace que las etiquetas ocupen todo el ancho disponible */
+    margin-bottom: 10px; /* Espacio entre las etiquetas y los campos de entrada */
+  }
+
+  .todo-form input[type="text"],
+  .todo-form input[type="date"],
+  .todo-form input[type="time"],
+  .todo-form button {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #007bff;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-bottom: 20px; /* Espacio entre los campos de entrada */
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+  }
+
+  li {
+    padding: 20px;
+    border-bottom: 1px solid #eee;
+    font-size: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin-bottom: 20px; /* Espacio entre las tareas */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .completed {
+    text-decoration: line-through;
+    color: #999;
+  }
+
+  .edit-btn,
+  .delete-btn {
+    background: transparent;
+    color: #007bff;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+  }
+
+  .edit-btn {
+    margin-left: 10px;
+  }
+
+  .delete-btn {
+    margin-left: 10px;
+  }
+
+  .dates {
+    font-weight: bold;
+  }
+
+  #filterOptions {
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: background-color 0.3s ease;
+  }
+
+  button:hover {
+    background-color: #0056b3;
+  }

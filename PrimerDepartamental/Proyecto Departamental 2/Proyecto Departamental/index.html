@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta etiquetas para el juego de caracteres y la configuración de la vista -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Título de la página -->
+  <title>Los Duros</title>
+  <!-- Enlace al archivo CSS para estilos -->
+  <link rel="stylesheet" href="./disenio.css">
+</head>
+<body>
+  <!-- Fondo de pantalla -->
+  <div class="background"></div>
+  <!-- Contenedor principal -->
+  <div class="container">
+    <!-- Encabezado principal -->
+    <h1>TAREAS</h1>
+    <!-- Formulario para agregar nuevas tareas -->
+    <div class="todo-form">
+      <!-- Etiquetas y campos de entrada para la tarea, fecha de inicio, hora de inicio, fecha de entrega y hora de entrega -->
+      <label for="taskInput">Tarea:</label>
+      <input type="text" id="taskInput" placeholder="Agregar nueva tarea">
+      <label for="startDateInput">Fecha de Inicio:</label>
+      <input type="date" id="startDateInput">
+      <label for="startTimeInput">Hora de Inicio:</label>
+      <input type="time" id="startTimeInput">
+      <label for="dueDateInput">Fecha de Entrega:</label>
+      <input type="date" id="dueDateInput">
+      <label for="dueTimeInput">Hora de Entrega:</label>
+      <input type="time" id="dueTimeInput">
+    </div>
+    <!-- Lista de tareas -->
+    <ul id="taskList"></ul>
+    <!-- Opciones de filtro para las tareas -->
+    <div id="filterOptions">
+      <button id="allTasks">Todas</button>
+      <button id="activeTasks">Activas</button>
+      <button id="completedTasks">Completadas</button>
+      <button id="clearCompleted">Limpiar Completadas</button>
+    </div>
+  </div>
+
+  <!-- Enlace al archivo JavaScript para la lógica de la aplicación -->
+  <script src="./funcion.js"></script>
+</body>
+</html>

@@ -1,0 +1,176 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: aquamarine;
+  }
+  
+  .reloj {
+    width: 250px;
+    height: 250px;
+    border: 10px solid gray;
+    border-radius: 50%;
+    margin: 0 auto;
+    position: relative;
+  }
+  
+  .punto {
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    top: 120px;
+    left: 120px;
+  }
+  
+  .hora {
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+    position: absolute;
+  }
+  
+  .hora-1 {
+    top: 20px;
+    right: 65px;
+  }
+  
+  .hora-2 {
+    top: 62.5px;
+    right: 22.5px;
+  }
+  
+  .hora-3 {
+    top: 117.5px;
+    right: 5px;
+  }
+  
+  .hora-4 {
+    top: 172.5px;
+    right: 22.5px;
+  }
+  
+  .hora-5 {
+    top: 215px;
+    right: 65px;
+  }
+  
+  .hora-6 {
+    bottom: 5px;
+    left: 120px;
+  }
+  
+  .hora-7 {
+    top: 215px;
+    left: 65px;
+  }
+  
+  .hora-8 {
+    top: 172.5px;
+    left: 22.5px;
+  }
+  
+  .hora-9 {
+    top: 117.5px;
+    left: 5px;
+  }
+  
+  .hora-10 {
+    top: 62.5px;
+    left: 22.5px;
+  }
+  
+  .hora-11 {
+    top: 21.5px;
+    left: 65px;
+  }
+  
+  .hora-12 {
+    top: 5px;
+    left: 117.5px;
+  }
+  
+  .brand {
+    font-size: 10px;
+    font-weight: bold;
+    color: blue;
+    position: absolute;
+    top: 45px;
+    left: 42.5%;
+  }
+  
+  .BrazoMinuto-wrapper {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    border-radius: 50%;
+  }
+  
+  .BrazoMinuto {
+    position: relative;
+  }
+  
+  .BrazoMinuto .brazo {
+    width: 2px;
+    height: 100px;
+    background-color: red;
+    position: absolute;
+    left: 99px;
+  }
+  
+  .BrazoHora-wrapper {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    border-radius: 50%;
+  }
+  
+  .BrazoHora {
+    position: relative;
+  }
+  
+  .BrazoHora .brazo {
+    width: 2px;
+    height: 75px;
+    background-color: blue;
+    position: absolute;
+    left: 74px;
+  }
+  
+  .BrazoSegundo-wrapper {
+    width: 175px;
+    height: 175px;
+    position: absolute;
+    top: 37.5px;
+    left: 37.5px;
+    border-radius: 50%;
+  }
+  
+  .BrazoSegundo {
+    position: relative;
+  }
+  
+  .BrazoSegundo .brazo {
+    width: 1px;
+    height: 87.5px;
+    background-color: black;
+    position: absolute;
+    left: 87px;
+  }
+  
+  #digital-clock {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 10px;
+    margin-top: 20px;
+    width: 300px;
+    max-width: 100%;
+  }
+  

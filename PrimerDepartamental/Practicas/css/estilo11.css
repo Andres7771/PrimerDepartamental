@@ -1,0 +1,130 @@
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif; /* Fuente para todo el cuerpo */
+  margin: 0; /* Elimina los márgenes predeterminados */
+  padding: 0; /* Elimina el relleno predeterminado */
+  background-image: url('../images/CdComic.jpeg'); /* Imagen de fondo */
+  background-size: cover; /* La imagen de fondo cubre todo el cuerpo */
+}
+
+header {
+  background-color: #3e96e7; /* Color de fondo del encabezado */
+  opacity: 0.9; /* Opacidad del encabezado */
+  padding: 3px 0; /* Relleno del encabezado */
+  text-align: center; /* Texto centrado en el encabezado */
+  font-weight: bold; /* Texto en negrita */
+  color: rgb(133, 8, 216); /* Color del texto */
+}
+
+.Contenido {
+  display: flex; /* Utiliza flexbox para el diseño */
+  flex-direction: row; /* Organiza los elementos en filas */
+  width: 80%; /* Ancho del contenido */
+  margin: 0 auto; /* Centra el contenido horizontalmente */
+}
+
+/* Div verticales */
+.formulario,
+.detalles-evento,
+.Detalles-compra {
+  margin: 10px; /* Espacio entre los div */
+}
+
+/* Formulario */
+.formulario {
+  background-color: rgb(46, 219, 12); /* Color de fondo del formulario */
+  opacity: 80%; /* Opacidad del formulario */
+  order: 1; /* Orden del formulario */
+  flex: 1; /* Se expande para ocupar el espacio disponible */
+  display: flex; /* Utiliza flexbox para el diseño */
+  flex-direction: column; /* Organiza los elementos en columnas */
+  align-items: center; /* Centra los elementos horizontalmente */
+  padding: 15px; /* Relleno del formulario */
+}
+
+.formulario form {
+  display: flex; /* Utiliza flexbox para el diseño */
+  flex-direction: column; /* Organiza los elementos en columnas */
+  width: 100%; /* Ancho del formulario */
+}
+
+.formulario label {
+  margin-bottom: 5px; /* Margen inferior para las etiquetas */
+}
+
+.formulario input,
+.formulario select {
+  padding: 5px; /* Relleno para los campos de entrada */
+  border: 1px solid #ccc; /* Borde para los campos de entrada */
+  border-radius: 5px; /* Borde redondeado para los campos de entrada */
+  margin-bottom: 10px; /* Margen inferior para los campos de entrada */
+  width: 100%; /* Ancho de los campos de entrada */
+}
+
+.formulario button {
+  background-color: #c51089; /* Color de fondo del botón */
+  color: #fff; /* Color del texto del botón */
+  padding: 10px 20px; /* Relleno del botón */
+  border: none; /* Sin borde */
+  border-radius: 5px; /* Borde redondeado para el botón */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+  margin-top: 10px; /* Margen superior para el botón */
+}
+
+/* Sección de detalles del evento */
+.detalles-evento {
+  background-color: white; /* Color de fondo de la sección */
+  opacity: 80%; /* Opacidad de la sección */
+  order: 0; /* Orden de la sección */
+  margin: 0 auto; /* Centra la sección horizontalmente */
+  text-align: center; /* Texto centrado en la sección */
+  flex: 1; /* Se expande para ocupar el espacio disponible */
+  padding: 15px; /* Relleno de la sección */
+}
+
+.detalles-evento h2 {
+  margin-bottom: 10px; /* Margen inferior para el título */
+}
+
+.detalles-evento ul {
+  list-style: none; /* Sin viñetas para la lista */
+  padding: 0; /* Sin relleno para la lista */
+}
+
+.detalles-evento li {
+  margin-bottom: 5px; /* Margen inferior para los elementos de la lista */
+}
+
+.detalles-evento img{
+  width: 50%; /* Ancho de la imagen */
+}
+
+/* Sección de detalles del evento */
+.Detalles-compra{
+  background-color: white; /* Color de fondo de la sección */
+  opacity: 80%; /* Opacidad de la sección */
+  order: 2; /* Orden de la sección */
+  margin: 0 auto; /* Centra la sección horizontalmente */
+  flex: 1; /* Se expande para ocupar el espacio disponible */
+  padding: 15px; /* Relleno de la sección */
+}
+
+.detalle{
+  font-weight: bold; /* Texto en negrita para los detalles */
+} 
+
+/* Media queries */
+@media (max-width: 768px) {
+  .formulario,
+  .detalles-evento {
+    width: 100%; /* Ancho completo para el formulario y los detalles del evento */
+  }
+  
+  .formulario {
+    flex-direction: column; /* Organiza los elementos del formulario en columnas */
+  }
+  
+  .detalles-evento {
+    grid-template-columns: none; /* Elimina la disposición en columnas para los detalles del evento */
+  }
+}

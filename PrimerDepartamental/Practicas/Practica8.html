@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<head>
+    <title>Document</title>
+    <script type="text/javascript" src="./js/javaP8.js"></script>
+    <link rel="stylesheet" type="text/css" href="./css/estiloP8.css">
+</head>
+<body>
+    <h1>Calificacion estudiantil</h1>
+    <div id="formuCal">
+        <form>
+            <label>Nombre completo del estudiante:</label><br>
+            <input type="text" id="nomb">
+            <br><br>
+            <label>Ingresa la matricula:</label><br>
+            <input type="text" id="mat">
+            <br><br>
+            <label>Ingresa la calificacion de calculo:</label><br>
+            <input type="number" id="cal1">
+            <br><br>
+            <label>Ingresa la calificacion de redes:</label><br>
+            <input type="number" id="cal2">
+            <br><br>
+            <label>Ingresa la calificacion de programacion:</label><br>
+            <input type="number" id="cal3">
+            <br><br>
+            <label>Ingresa la calificacion de bases de datos:</label><br>
+            <input type="number" id="cal4">
+            <br><br>
+            <label>Ingresa la calificacion de Investigacion:</label><br>
+            <input type="number" id="cal5">
+            <br><br>
+            <input type="button" value="Enviar" onclick="subirInfo()" id="botonE">
+        </form>
+    </div>
+    <br><br>
+    <p id="nomAlum"></p>
+    <p id="matAlum"></p>
+
+    <div id="tabla"></div>
+    
+</body>
+</html>

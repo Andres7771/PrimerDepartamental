@@ -1,0 +1,77 @@
+label{
+    display: grid;
+    place-items: center;
+}
+.cajaTexto{
+    width: 200%;
+    height: 20px;
+}
+.tooltip {
+    position: relative;
+    display: inline-block;
+    margin: 0px 20px;
+}
+.tooltip .tip {
+    visibility: hidden;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.tooltip:hover .tip {
+    visibility: visible;
+    opacity: 1;
+}
+.contenedor{
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+}
+.InicioS{
+    padding: 10px;
+    border-radius: 30px;
+    background-color: black;
+    color: white;
+}
+#Iniciar{
+    font-size: 30px;
+}
+body{
+    background-image:url("../images/1332796.png");
+    font-family: Arial, Helvetica, sans-serif;
+    background-size: cover;
+}
+#botonE{
+    border-radius: 30px;
+    background-color: rgb(187, 176, 176);
+    width: 400px;
+    padding: 20px;
+    opacity: 60%;
+    font-weight: bold;
+    font-size: 18px;
+}
+.boton:hover {
+    background-color: rgb(155, 150, 150);
+  }
+
+  .boton:active {
+    background-color: rgb(126, 123, 123);
+
+  }
+#recordarCheckbox {
+    vertical-align: middle; /* Alinear verticalmente con el texto */
+}
+#recordar {
+    display: inline-block; /* Mostrar en línea con el checkbox */
+    vertical-align: middle; /* Alinear verticalmente con el texto */
+    margin-left: 100px; /* Ajustar el margen izquierdo para separarlo del checkbox */
+}
+

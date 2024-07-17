@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<head>
+    <title>Anime-Con</title>
+    <!-- Se carga un archivo JavaScript -->
+    <script type="text/javascript" src="./js/java11.js"></script>
+    <!-- Se carga un archivo CSS para los estilos -->
+    <link rel="stylesheet" type="text/css" href="./css/estilo11.css">
+</head>
+<body>
+    <!-- Encabezado de la página -->
+    <header>
+        <h1>Registro de Anime-Con</h1>
+    </header>
+    <br>
+    <!-- Contenedor principal del contenido -->
+    <div class="Contenido">
+        <!-- Formulario de registro -->
+        <div class="formulario">
+            <h2>Registro</h2>
+            <!-- Formulario con campos para nombre, correo, teléfono y tipo de entrada -->
+            <form onsubmit="return validarFormulario()">
+                <label>Nombre Completo:</label>
+                <input type="text" id="nombre" name="nombre" oninput="actualizarEtiqueta()" required>
+                <br><br>
+                <label>Correo Electrónico:</label>
+                <input type="email" id="correo" name="correo" oninput="actualizarEtiqueta()" required>
+                <br><br>
+                <label>Número de Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" oninput="actualizarEtiqueta()" required>
+                <br><br>
+                <label>Tipo de Entrada:</label>
+                <select id="tipo-entrada" name="tipo-entrada" oninput="actualizarEtiqueta()" required>
+                    <option value="">Seleccionar...</option>
+                    <option value="general">General</option>
+                    <option value="vip">VIP</option>
+                    <option value="platinum">Platinum</option>
+                </select>
+                <br><br>
+                <button type="submit">Enviar</button><!-- Botón de envío del formulario -->
+            </form>
+        </div>
+        <!-- Detalles del evento -->
+        <div class="detalles-evento">
+            <h2>Detalles del Evento</h2>
+            <!-- Lista con detalles como fecha, lugar y descripción del evento -->
+            <ul>
+                <li><strong>Fecha:</strong> 16 de Julio de 2024</li>
+                <br><br>
+                <li><strong>Lugar:</strong> Centro de Convenciones Tlatelolco, Ciudad de México</li>
+                <br><br>
+                <li><strong>Descripción:</strong> La Convención de Comics es un evento anual que reúne a los fanáticos
+                    de Marvel, DC, cosplay, gamer, entre otros. Disfruta de invitados especiales, stands de venta,
+                    talleres, concursos y mucho más.</li>
+                <br>
+                <!-- Imagen del logo del evento -->
+                <img src="./images/logo.jpg">
+            </ul>
+        </div>
+        <!-- Detalles de la compra -->
+        <div class="Detalles-compra">
+            <h2>Detalles del Evento</h2>
+            <br>
+            <!-- Aquí se mostrarán los detalles de la compra al ingresar los datos -->
+            <p class="detalle">Nombre: </p><span id="nombre-compra"></span>
+            <br><br>
+            <p class="detalle">Correo electrónico: </p><span id="correo-compra"></span>
+            <br><br>
+            <p class="detalle">Telefono: </p><span id="telefonoo-compra"></span>
+            <br><br>
+            <p class="detalle">Tipo de entrada: </p><span id="entrada-compra"></span>
+        </div>
+    </div>
+</body>
+</html>
